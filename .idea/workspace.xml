@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web:war" />
       <artifact name="web:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b2c696-910a-4052-b9be-9374e31c284d" name="Default Changelist" comment="Modify SQL restaurant query in report">
+    <list default="true" id="16b2c696-910a-4052-b9be-9374e31c284d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/report/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/report/report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war/mouraua2.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war/mouraua2.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/professional/createRestaurant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/professional/createRestaurant.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/professional/createRestaurant.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+            <state relative-caret-position="272">
+              <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -61,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -207,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/org/dcu/models/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/org/dcu/admin/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/org/dcu/pro/RestaurantServlet.java" />
-        <option value="$PROJECT_DIR$/web/professional/createRestaurant.jsp" />
         <option value="$PROJECT_DIR$/src/org/dcu/database/Restaurants.java" />
         <option value="$PROJECT_DIR$/web/professional/home.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
@@ -215,6 +211,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web/report/report.jsp" />
         <option value="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/web/professional/createRestaurant.jsp" />
       </list>
     </option>
   </component>
@@ -301,6 +298,12 @@
               <item name="EE417_take_away" type="b2602c69:ProjectViewProjectNode" />
               <item name="EE417_take_away" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="professional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EE417_take_away" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EE417_take_away" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,7 +329,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554315600010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554316018881" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaillyjMessageBoardSystem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -456,7 +459,7 @@
       <workItem from="1554074263166" duration="68000" />
       <workItem from="1554074371316" duration="20427000" />
       <workItem from="1554126582780" duration="56213000" />
-      <workItem from="1554304520167" duration="10672000" />
+      <workItem from="1554304520167" duration="11162000" />
     </task>
     <task id="LOCAL-00001" summary="Add logout button to professional page&#10;Add mention that markdown is allowed in report as requested by teacher">
       <created>1554313354553</created>
@@ -486,11 +489,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554315104148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modify SQL restaurant query in report&#10;Use redirect instead of dispatcher for logout">
+      <created>1554315632979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554315632979</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123073000" />
+    <option name="totallyTimeSpent" value="123563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -506,7 +516,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -572,7 +582,8 @@
     <MESSAGE value="Add description and phone number to restaurant&#10;Add email and phone number validation using regex" />
     <MESSAGE value="Add description and phone number to order page" />
     <MESSAGE value="Modify SQL restaurant query in report" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify SQL restaurant query in report" />
+    <MESSAGE value="Modify SQL restaurant query in report&#10;Use redirect instead of dispatcher for logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify SQL restaurant query in report&#10;Use redirect instead of dispatcher for logout" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -937,13 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/professional/createRestaurant.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1005,6 +1009,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/report/report.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
@@ -1012,10 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/professional/createRestaurant.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        <state relative-caret-position="272">
+          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
         </state>
       </provider>
     </entry>
