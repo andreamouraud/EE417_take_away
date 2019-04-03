@@ -13,9 +13,13 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @WebServlet("/professional/signup")
 public class SignupServlet extends HttpServlet {
+  private static final String REGEX_EMAIL = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
+
   private static final long serialVersionUID = 1L;
 
 
@@ -88,9 +92,10 @@ public class SignupServlet extends HttpServlet {
    * Validate email address
    * @param email
    * @return whether email is valid or not
-   * TODO: validate
    */
   private boolean validateEmail(String email) {
-      return true;
+    Pattern pattern = Pattern.compile(REGEX_EMAIL);
+    Matcher matcher = pattern.matcher(email);
+    return matcher.matches();
   }
 }

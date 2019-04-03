@@ -10,12 +10,16 @@ public class Restaurant {
   private String name;
   private Integer owner;
   private String location;
+  private String description;
+  private String phoneNumber;
   private List<Menu> menu;
 
-  public Restaurant(String name, String location, Integer owner) {
+  public Restaurant(String name, String location, Integer owner, String description, String phoneNumber) {
     this.name = name;
     this.location = location;
     this.owner = owner;
+    this.description = description;
+    this.phoneNumber = phoneNumber;
   }
 
   public Restaurant() {}
@@ -62,5 +66,21 @@ public class Restaurant {
 
   public void setMenu(List<Menu> menu) {
     this.menu = menu;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
   }
 }

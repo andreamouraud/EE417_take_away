@@ -79,7 +79,7 @@ public class HomeServlet extends HttpServlet {
       reset();
       String salt = HashingUtilities.generateSalt();
       Users.add(new User("Andrea", "Mouraud", "user@dcu.ie", HashingUtilities.generateHashedPassword("password", salt), 1, salt));
-      Restaurants.add(new Restaurant("Pizzeria", "O Connell Street, Dublin, Ireland", 1));
+      Restaurants.add(new Restaurant("Pizzeria", "O Connell Street, Dublin, Ireland", 1, "Italian Restaurant", "+33633778225"));
       Menus.add(new Menu("Pizza Margherita", "Pizza Margherita is a typical Neapolitan pizza made with San Marzano tomatoes, mozzarella fior di latte, fresh basil salt and extra-virgin olive oil.", 11.99, 1));
       Menus.add(new Menu("Pizza Neapolitan", "Pizza Neapolitan is a style of pizza made with tomatoes and mozzarella cheese.", 13.00, 1));
       Orders.add(new Order(1, 1, "New customer"));

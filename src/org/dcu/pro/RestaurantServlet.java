@@ -15,12 +15,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Professional Restaurant Servlet
  */
 @WebServlet("/professional/restaurant")
 public class RestaurantServlet extends HttpServlet {
+  private static final String REGEX_PHONENUMBER = "\\d{10}|(?:\\d{3}-){2}\\d{4}|\\(\\d{3}\\)\\d{3}-?\\d{4}";
   private static final long serialVersionUID = 1L;
 
 
@@ -35,7 +38,7 @@ public class RestaurantServlet extends HttpServlet {
     HttpSession session = req.getSession(true);
 
     User currentUser = (User) req.getSession(true).getAttribute("user");
-    Restaurant restaurant = createRestaurant(req.getParameter("nameField"), req.getParameter("locationField"), currentUser.getId());
+    Restaurant restaurant = createRestaurant(req.getParameter("nameField"), req.getParameter("locationField"), currentUser.getId(), req.getParameter("descriptionField"), req.getParameter("phoneNumberField"));
 
     if (restaurant != null) {
       res.sendRedirect(req.getContextPath() + "/professional");
@@ -74,9 +77,9 @@ public class RestaurantServlet extends HttpServlet {
    * @param owner
    * @return the new restaurant
    */
-  private Restaurant createRestaurant(String name, String location, int owner) {
-    if (validateIdentity(name)) {
-      Restaurant restaurant = new Restaurant(name, location, owner);
+  private Restaurant createRestaurant(String name, String location, int owner, String description, String phoneNumber) {
+    if (validateIdentity(name) && validatePhoneNumber(phoneNumber)) {
+      Restaurant restaurant = new Restaurant(name, location, owner, description, phoneNumber);
       Restaurants.add(restaurant);
       return restaurant;
     }
@@ -90,5 +93,16 @@ public class RestaurantServlet extends HttpServlet {
    */
   private boolean validateIdentity(String name) {
     return !name.isEmpty();
+  }
+
+  /**
+   * Validate phone number
+   * @param email
+   * @return whether number is valid or not
+   */
+  private boolean validatePhoneNumber(String email) {
+    Pattern pattern = Pattern.compile(REGEX_PHONENUMBER);
+    Matcher matcher = pattern.matcher(email);
+    return matcher.matches();
   }
 }

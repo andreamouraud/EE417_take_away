@@ -14,6 +14,8 @@
     <form method="POST" action="${contextPath}/professional/restaurant" name="form">
         <input type="text" name="nameField" placeholder="Name"/>
         <input type="text" name="locationField" placeholder="Location"/>
+        <input type="text" name="descriptionField" placeholder="Description"/>
+        <input type="text" name="phoneNumberFieldField" placeholder="Location"/>
         <input type="submit" value="CREATE" />
     </form>
     <hr>

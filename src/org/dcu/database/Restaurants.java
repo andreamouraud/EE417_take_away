@@ -24,6 +24,8 @@ public class Restaurants {
             "    name VARCHAR(255)," +
             "    location VARCHAR(255)," +
             "    owner INTEGER," +
+            "    description VARCHAR(255)," +
+            "    phoneNumber VARCHAR(255)," +
             "    PRIMARY KEY(id)," +
             "    CONSTRAINT FK_RESTAURANTS_USERS_owner FOREIGN KEY (owner) REFERENCES MOURAUA2_USERS(ID) ON DELETE SET NULL" +
             ")");
@@ -57,6 +59,8 @@ public class Restaurants {
         restaurant.setName(rs.getString(2));
         restaurant.setLocation(rs.getString(3));
         restaurant.setOwner(rs.getInt(4));
+        restaurant.setDescription(rs.getString(5));
+        restaurant.setPhoneNumber(rs.getString(6));
         restaurants.add(restaurant);
       }
       DatabaseConnection.close();
@@ -82,6 +86,8 @@ public class Restaurants {
         restaurant.setName(rs.getString(2));
         restaurant.setLocation(rs.getString(3));
         restaurant.setOwner(rs.getInt(4));
+        restaurant.setDescription(rs.getString(5));
+        restaurant.setPhoneNumber(rs.getString(6));
         restaurants.add(restaurant);
       }
       DatabaseConnection.close();
@@ -107,6 +113,8 @@ public class Restaurants {
         restaurant.setName(rs.getString(2));
         restaurant.setLocation(rs.getString(3));
         restaurant.setOwner(rs.getInt(4));
+        restaurant.setDescription(rs.getString(5));
+        restaurant.setPhoneNumber(rs.getString(6));
       }
       DatabaseConnection.close();
       return restaurant;
@@ -124,8 +132,8 @@ public class Restaurants {
     try {
       Statement stmt = DatabaseConnection.connect();
 
-      stmt.executeUpdate("INSERT INTO mouraua2_restaurants (name, location, owner) VALUES ('" +
-              restaurant.getName() +"', '" + restaurant.getLocation() +"', " + restaurant.getOwner()+ ")");
+      stmt.executeUpdate("INSERT INTO mouraua2_restaurants (name, location, owner, description, phoneNumber) VALUES ('" +
+              restaurant.getName() +"', '" + restaurant.getLocation() +"', " + restaurant.getOwner()+ ", '"+ restaurant.getDescription() + "', '" + restaurant.getPhoneNumber()+"')");
       DatabaseConnection.close();
     } catch (ClassNotFoundException | SQLException e) {
       e.printStackTrace();
