@@ -145,5 +145,5 @@ CREATE TABLE mouraua2_orders (
 * MVC Architecture
 * Session tracking and logout
 * Complete Javadoc documentation
-* MarkDown report (Turned to HTML scraping Github)
+* MarkDown report (Turned to HTML scraping Github, *allowed by teacher*)
 * Field modification 

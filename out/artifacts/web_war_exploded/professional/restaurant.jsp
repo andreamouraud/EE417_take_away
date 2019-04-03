@@ -61,5 +61,8 @@
     </div>
 
 </div>
+<footer class="footer">Online Take-Away System | Andrea Mouraud<br>
+    <a href="${contextPath}/professional/logout">Logout</a>
+</footer>
 </body>
 </html>

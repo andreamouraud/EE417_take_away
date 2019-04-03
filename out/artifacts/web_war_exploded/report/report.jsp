@@ -1122,7 +1122,7 @@
             <li>MVC Architecture</li>
             <li>Session tracking and logout</li>
             <li>Complete Javadoc documentation</li>
-            <li>MarkDown report (Turned to HTML scraping Github)</li>
+            <li>MarkDown report (Turned to HTML scraping Github, <em>allowed by teacher</em>)</li>
             <li>Field modification</li>
         </ul>
     </article>
