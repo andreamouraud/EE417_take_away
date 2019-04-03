@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="web:war" />
       <artifact name="web:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b2c696-910a-4052-b9be-9374e31c284d" name="Default Changelist" comment="">
+    <list default="true" id="16b2c696-910a-4052-b9be-9374e31c284d" name="Default Changelist" comment="Modify SQL restaurant query in report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/admin/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/admin/HomeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/database/Restaurants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/database/Restaurants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/models/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/models/Restaurant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/RestaurantServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/RestaurantServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/SignupServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/createRestaurant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/createRestaurant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/admin/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/admin/HomeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/database/Restaurants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/database/Restaurants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/models/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/models/Restaurant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/RestaurantServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/RestaurantServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/SignupServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/report/report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/report/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/report/report.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,22 +29,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/SignupServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="90" column="2" lean-forward="true" selection-start-line="90" selection-start-column="2" selection-end-line="99" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/RestaurantServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="40" column="204" selection-start-line="40" selection-start-column="204" selection-end-line="40" selection-end-column="204" />
+        <entry file="file://$PROJECT_DIR$/web/report/report.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="144">
+                <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -65,31 +50,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/dcu/admin/HomeServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/CreateRestaurantServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/dcu/database/Restaurants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="135" column="103" selection-start-line="135" selection-start-column="103" selection-end-line="135" selection-end-column="103" />
+            <state relative-caret-position="425">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="27" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-40">
+                <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/report/report.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="767" column="23" selection-start-line="767" selection-start-column="23" selection-end-line="767" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -124,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
@@ -197,15 +194,11 @@
         <option value="$PROJECT_DIR$/src/org/dcu/javadoc/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/org/dcu/pro/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/org/dcu/utils/Session.java" />
-        <option value="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/documentation/report.md" />
         <option value="$PROJECT_DIR$/web/report/report.html" />
         <option value="$PROJECT_DIR$/web/report/test.js" />
         <option value="$PROJECT_DIR$/web/report/2.html" />
         <option value="$PROJECT_DIR$/src/org/dcu/report/HomeServlet.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web/report/report.md" />
-        <option value="$PROJECT_DIR$/web/report/report.jsp" />
         <option value="$PROJECT_DIR$/web/professional/createMenu.jsp" />
         <option value="$PROJECT_DIR$/web/professional/login.jsp" />
         <option value="$PROJECT_DIR$/web/professional/menu.jsp" />
@@ -218,6 +211,10 @@
         <option value="$PROJECT_DIR$/src/org/dcu/database/Restaurants.java" />
         <option value="$PROJECT_DIR$/web/professional/home.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
+        <option value="$PROJECT_DIR$/web/report/report.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web/report/report.jsp" />
+        <option value="$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java" />
       </list>
     </option>
   </component>
@@ -302,6 +299,12 @@
             </path>
             <path>
               <item name="EE417_take_away" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EE417_take_away" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EE417_take_away" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -323,7 +326,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554314828205" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554315600010" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaillyjMessageBoardSystem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -453,7 +456,7 @@
       <workItem from="1554074263166" duration="68000" />
       <workItem from="1554074371316" duration="20427000" />
       <workItem from="1554126582780" duration="56213000" />
-      <workItem from="1554304520167" duration="9970000" />
+      <workItem from="1554304520167" duration="10672000" />
     </task>
     <task id="LOCAL-00001" summary="Add logout button to professional page&#10;Add mention that markdown is allowed in report as requested by teacher">
       <created>1554313354553</created>
@@ -469,11 +472,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554314728237</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add description and phone number to order page">
+      <created>1554314864789</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554314864789</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modify SQL restaurant query in report">
+      <created>1554315104147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554315104148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122371000" />
+    <option name="totallyTimeSpent" value="123073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -489,7 +506,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,7 +570,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add logout button to professional page&#10;Add mention that markdown is allowed in report as requested by teacher" />
     <MESSAGE value="Add description and phone number to restaurant&#10;Add email and phone number validation using regex" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add description and phone number to restaurant&#10;Add email and phone number validation using regex" />
+    <MESSAGE value="Add description and phone number to order page" />
+    <MESSAGE value="Modify SQL restaurant query in report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify SQL restaurant query in report" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -736,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/dcu/utils/Session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -829,39 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="419">
-            <caret line="147" column="71" selection-start-line="147" selection-start-column="71" selection-end-line="147" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/report/report.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="416">
-            <caret line="145" column="29" selection-start-line="145" selection-start-column="29" selection-end-line="145" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/report/report.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="1124" column="92" selection-start-line="1124" selection-start-column="92" selection-end-line="1124" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,16 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/dcu/database/Restaurants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="135" column="103" selection-start-line="135" selection-start-column="103" selection-end-line="135" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1003,6 +972,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/dcu/database/Restaurants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="27" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/report/report.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="144">
+            <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-40">
+            <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/report/report.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="767" column="23" selection-start-line="767" selection-start-column="23" selection-end-line="767" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/dcu/pro/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
         </state>
       </provider>
     </entry>

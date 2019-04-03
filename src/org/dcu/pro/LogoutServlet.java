@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
     req.setAttribute("contextPath", req.getContextPath());
     Session.clear(req, res);
-    req.getRequestDispatcher("/professional").forward(req, res);
+    res.sendRedirect(req.getContextPath() + "/professional");
   }
 
 }

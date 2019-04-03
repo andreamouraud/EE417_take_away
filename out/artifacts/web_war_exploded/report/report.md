@@ -102,6 +102,8 @@ CREATE TABLE mouraua2_restaurants (
                 name VARCHAR(255),
                 location VARCHAR(255),
                 owner INTEGER,
+                description VARCHAR(255),
+                phoneNumber VARCHAR(255),
                 PRIMARY KEY(id),
                 CONSTRAINT FK_RESTAURANTS_USERS_owner FOREIGN KEY (owner) REFERENCES MOURAUA2_USERS(ID) ON DELETE SET NULL
             )

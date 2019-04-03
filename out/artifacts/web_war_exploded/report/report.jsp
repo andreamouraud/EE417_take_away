@@ -1088,6 +1088,8 @@
                 name <span class="pl-k">VARCHAR</span>(<span class="pl-c1">255</span>),
                 location <span class="pl-k">VARCHAR</span>(<span class="pl-c1">255</span>),
                 owner <span class="pl-k">INTEGER</span>,
+                description <span class="pl-k">VARCHAR</span>(<span class="pl-c1">255</span>),
+                phoneNumber <span class="pl-k">VARCHAR</span>(<span class="pl-c1">255</span>),
                 <span class="pl-k">PRIMARY KEY</span>(id),
                 <span class="pl-k">CONSTRAINT</span> FK_RESTAURANTS_USERS_owner <span class="pl-k">FOREIGN KEY</span> (owner) <span class="pl-k">REFERENCES</span> MOURAUA2_USERS(ID) <span class="pl-k">ON DELETE</span> <span class="pl-k">SET</span> <span class="pl-k">NULL</span>
             )</pre></div>
