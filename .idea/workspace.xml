@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="web:war" />
       <artifact name="web:war exploded" />
     </artifacts-to-build>
   </component>
@@ -9,8 +10,7 @@
     <list default="true" id="16b2c696-910a-4052-b9be-9374e31c284d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war/mouraua2.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war/mouraua2.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/org/dcu/pro/LogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EE417_take_away/org/dcu/pro/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/createRestaurant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/professional/createRestaurant.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/professional/createRestaurant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/professional/createRestaurant.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/professional/createRestaurant.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+            <state relative-caret-position="289">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -329,7 +329,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554316018881" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554316127189" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaillyjMessageBoardSystem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -459,7 +459,7 @@
       <workItem from="1554074263166" duration="68000" />
       <workItem from="1554074371316" duration="20427000" />
       <workItem from="1554126582780" duration="56213000" />
-      <workItem from="1554304520167" duration="11162000" />
+      <workItem from="1554304520167" duration="11270000" />
     </task>
     <task id="LOCAL-00001" summary="Add logout button to professional page&#10;Add mention that markdown is allowed in report as requested by teacher">
       <created>1554313354553</created>
@@ -496,11 +496,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554315632979</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix restaurant phone number placeholder">
+      <created>1554316050719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554316050719</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123563000" />
+    <option name="totallyTimeSpent" value="123671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -583,7 +590,8 @@
     <MESSAGE value="Add description and phone number to order page" />
     <MESSAGE value="Modify SQL restaurant query in report" />
     <MESSAGE value="Modify SQL restaurant query in report&#10;Use redirect instead of dispatcher for logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify SQL restaurant query in report&#10;Use redirect instead of dispatcher for logout" />
+    <MESSAGE value="Fix restaurant phone number placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix restaurant phone number placeholder" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1025,8 +1033,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/professional/createRestaurant.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>

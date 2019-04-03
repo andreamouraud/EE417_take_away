@@ -15,7 +15,7 @@
         <input type="text" name="nameField" placeholder="Name"/>
         <input type="text" name="locationField" placeholder="Location"/>
         <input type="text" name="descriptionField" placeholder="Description"/>
-        <input type="text" name="phoneNumberFieldField" placeholder="Phone Number"/>
+        <input type="text" name="phoneNumberField" placeholder="Phone Number"/>
         <input type="submit" value="CREATE" />
     </form>
     <hr>
