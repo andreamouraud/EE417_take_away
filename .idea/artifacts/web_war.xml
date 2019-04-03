@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_war</output-path>
+    <root id="archive" name="mouraua2.war">
+      <element id="artifact" artifact-name="web:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/ojdbc6.jar" />
+          <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="com.atlassian.commonmark:commonmark:0.12.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
