@@ -24,8 +24,9 @@
             <c:forEach items="${restaurantList}" var="restaurant">
                 <li onclick="location.href='${contextPath}/professional/restaurant?id=${restaurant.id}';">
                     <strong>${restaurant.name}</strong>
-                    (${restaurant.location})
+                    (${restaurant.location})<br>${restaurant.phoneNumber}<br>
                     <hr>
+                        ${restaurant.description}
                 </li>
             </c:forEach>
             <c:if test="${not empty restaurantList}">
