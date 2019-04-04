@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Admin login Servlet
  */
-@WebServlet("/admin/login")
+@WebServlet("/application/admin/login")
 public class LoginServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -27,10 +27,9 @@ public class LoginServlet extends HttpServlet {
     req.setAttribute("contextPath", req.getContextPath());
     if (req.getParameter("emailField").equals("admin@dcu.ie") && req.getParameter("passwordField").equals("adminpass")) {
       HttpSession session = req.getSession();
-      User user = new User();
       session.setAttribute("user", new User());
     }
-    res.sendRedirect(req.getContextPath() + "/admin");
+    res.sendRedirect(req.getContextPath() + "/application/admin");
   }
 
   /**
@@ -43,7 +42,7 @@ public class LoginServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
     req.setAttribute("contextPath", req.getContextPath());
     User user = (User)req.getSession().getAttribute("user");
-    req.getRequestDispatcher("login.jsp").forward(req, res);
+    req.getRequestDispatcher("/admin/login.jsp").forward(req, res);
   }
 
 }

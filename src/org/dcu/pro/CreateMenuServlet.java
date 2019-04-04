@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Menu Creation Servlet
  */
-@WebServlet("/professional/createMenu")
+@WebServlet("/application/professional/createMenu")
 public class CreateMenuServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -23,6 +23,6 @@ public class CreateMenuServlet extends HttpServlet {
    */
   public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
     req.setAttribute("contextPath", req.getContextPath());
-    req.getRequestDispatcher( "createMenu.jsp").forward(req, res);
+    req.getRequestDispatcher( "/professional/createMenu.jsp").forward(req, res);
   }
 }

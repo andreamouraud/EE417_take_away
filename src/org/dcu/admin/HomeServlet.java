@@ -20,7 +20,7 @@ import java.io.IOException;
 /**
  * Administration Page Servlet
  */
-@WebServlet("/admin")
+@WebServlet("/application/admin")
 public class HomeServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -38,7 +38,7 @@ public class HomeServlet extends HttpServlet {
         reset();
     else if (type.equals("POPULATE DATABASE"))
       populate();
-    res.sendRedirect( req.getContextPath() + "/admin");
+    res.sendRedirect( req.getContextPath() + "/application/admin");
   }
 
   /**
@@ -52,10 +52,10 @@ public class HomeServlet extends HttpServlet {
     req.setAttribute("contextPath", req.getContextPath());
     User currentUser = (User) req.getSession(true).getAttribute("user");
     if (currentUser == null || currentUser.getId() != null) {
-      req.getRequestDispatcher("admin/login").forward(req, res);
+      req.getRequestDispatcher("/application/admin/login").forward(req, res);
       return;
     }
-    req.getRequestDispatcher( "admin/home.jsp").forward(req, res);
+    req.getRequestDispatcher( "/admin/home.jsp").forward(req, res);
   }
 
   private void reset() throws IOException {

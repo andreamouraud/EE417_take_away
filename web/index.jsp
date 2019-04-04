@@ -14,15 +14,20 @@
 </head>
 <body>
 <div class="page-container">
-  <header class="header">
-    <h1 onclick="location.href='${contextPath}/application';">Online Take-Away System</h1>
-  </header>
-  <div class="box">
-    <h2>Your order has been confirmed.<br>Thank you !</h2>
+  <div style="position: absolute;top: 50%;left: 50%;text-align: center;transform: translate(-50%, -50%);" id="list">
+    <ul>
+      <li onclick="window.open('${contextPath}/application')";>
+        <strong>Application</strong>
+      </li>
+      <li onclick="window.open('${contextPath}/report')">
+      <strong>Report</strong>
+    </li>
+      <li onclick="window.open('https://andreamouraud.github.io/')">
+      <strong>Javadoc</strong>
+    </li>
+    </ul>
   </div>
 </div>
-<footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-  <a href="${contextPath}/application/professional" target="_blank">Professional access</a>
-</footer>
+
 </body>
 </html>

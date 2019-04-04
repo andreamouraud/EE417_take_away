@@ -15,14 +15,14 @@
 <body>
 <div class="page-container">
   <header class="header">
-    <h1 onclick="location.href='${contextPath}/';">Online Take-Away System</h1>
+    <h1 onclick="location.href='${contextPath}/application';">Online Take-Away System</h1>
   </header>
   <div class="box">
     <h2>Your order has been confirmed.<br>Thank you !</h2>
   </div>
 </div>
 <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-  <a href="${contextPath}/professional" target="_blank">Professional access</a>
+  <a href="${contextPath}/application/professional" target="_blank">Professional access</a>
 </footer>
 </body>
 </html>

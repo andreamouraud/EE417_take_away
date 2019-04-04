@@ -15,20 +15,20 @@
 <body>
 <div class="page-container">
   <header class="header">
-    <h1 onclick="location.href='${contextPath}/';">Online Take-Away System</h1>
+    <h1 onclick="location.href='${contextPath}/application';">Online Take-Away System</h1>
   </header>
   <h2>Confirming your order of ${menu.name} to ${restaurant.name} !</h2>
 
   <div class="box">
     Let us know your name :
-    <form method="POST" action="${contextPath}/order?restaurant=${restaurant.id}&menu=${menu.id}" name="form">
+    <form method="POST" action="${contextPath}/application/order?restaurant=${restaurant.id}&menu=${menu.id}" name="form">
       <input type="text" name="customerField" placeholder="Name"/>
       <input type="submit" value="Order" />
     </form>
   </div>
 </div>
   <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-    <a href="${contextPath}/professional" target="_blank">Professional access</a>
+    <a href="${contextPath}/application/professional" target="_blank">Professional access</a>
   </footer>
 </body>
 </html>

@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Restaurant Order Servlet
  */
-@WebServlet("/restaurant")
+@WebServlet("/application/restaurant")
 public class RestaurantServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 

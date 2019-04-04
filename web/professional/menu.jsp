@@ -15,7 +15,7 @@
 <body>
 <div class="page-container">
     <header class="header">
-        <h1 onclick="location.href='${contextPath}/professional';">Online Take-Away System<br>Professional</h1>
+        <h1 onclick="location.href='${contextPath}/application/professional';">Online Take-Away System<br>Professional</h1>
     </header>
     <div class="title">${menu.name}</div>
 
@@ -29,7 +29,7 @@
     </div>
 </div>
 <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-    <a href="${contextPath}/professional/logout">Logout</a>
+    <a href="${contextPath}/application/professional/logout">Logout</a>
 </footer>
 </body>
 </html>

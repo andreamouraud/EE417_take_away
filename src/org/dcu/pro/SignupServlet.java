@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@WebServlet("/professional/signup")
+@WebServlet("/application/professional/signup")
 public class SignupServlet extends HttpServlet {
   private static final String REGEX_EMAIL = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
 
@@ -35,7 +35,7 @@ public class SignupServlet extends HttpServlet {
             req.getParameter("emailField"), req.getParameter("passwordField"),
             req.getParameter("passwordConfirmField"),
             Integer.parseInt(req.getParameter("genderField")));
-    res.sendRedirect(req.getContextPath() + (user != null ? "/professional" : "/professional/signup.jsp"));
+    res.sendRedirect(req.getContextPath() + (user != null ? "/application/professional" : "/professional/signup.jsp"));
   }
 
 

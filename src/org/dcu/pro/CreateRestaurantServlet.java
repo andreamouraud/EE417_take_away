@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Restaurant creation Servlet
  */
-@WebServlet("/professional/createRestaurant")
+@WebServlet("/application/professional/createRestaurant")
 public class CreateRestaurantServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -23,6 +23,6 @@ public class CreateRestaurantServlet extends HttpServlet {
    */
   public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
     req.setAttribute("contextPath", req.getContextPath());
-    req.getRequestDispatcher( "createRestaurant.jsp").forward(req, res);
+    req.getRequestDispatcher( "/professional/createRestaurant.jsp").forward(req, res);
   }
 }

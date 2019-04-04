@@ -80,6 +80,9 @@ public class Users {
         user.setSalt(rs.getString(7));
       }
       DatabaseConnection.close();
+      System.out.println("input   :" + password);
+      System.out.println("hashed  :" + HashingUtilities.generateHashedPassword(password, user.getSalt()));
+      System.out.println("database:" + user.getPassword());
       if (HashingUtilities.generateHashedPassword(password, user.getSalt()).equals(user.getPassword()))
         return user;
     } catch (Exception e) {

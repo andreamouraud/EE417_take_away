@@ -17,7 +17,7 @@ import java.io.IOException;
 /**
  * Order Servlet
  */
-@WebServlet("/order")
+@WebServlet("/application/order")
 public class OrderServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -54,7 +54,7 @@ public class OrderServlet extends HttpServlet {
 
     Order order = createOrder(restaurant, menu, req.getParameter("customerField"));
     req.setAttribute("order", order);
-    res.sendRedirect(req.getContextPath() + "/confirmation");
+    res.sendRedirect(req.getContextPath() + "/application/confirmation");
   }
 
   /**

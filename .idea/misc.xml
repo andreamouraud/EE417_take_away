@@ -17,7 +17,7 @@
     <option name="myUseUcmModel" value="true" />
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Javadoc" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../andreamouraud.github.io" />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />

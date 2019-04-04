@@ -986,18 +986,24 @@
             <tbody>
             <tr>
                 <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/" rel="nofollow">/</a></td>
+                <td>Home page</td>
+                <td align="center">No</td>
+                <td align="center">-</td>
+            </tr>
+            <tr>
+                <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application" rel="nofollow">/application</a></td>
                 <td>Anonymous ordering page</td>
                 <td align="center">No</td>
                 <td align="center">-</td>
             </tr>
             <tr>
-                <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/professional" rel="nofollow">/professional</a></td>
+                <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/professional" rel="nofollow">/application/professional</a></td>
                 <td>Restaurant managing page</td>
                 <td align="center">Yes</td>
                 <td align="center">Yes</td>
             </tr>
             <tr>
-                <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/admin" rel="nofollow">/admin</a></td>
+                <td><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/admin" rel="nofollow">/application/admin</a></td>
                 <td>Database administration page</td>
                 <td align="center">Yes</td>
                 <td align="center">No</td>
@@ -1010,9 +1016,12 @@
             </tr>
             </tbody>
         </table>
+        <h3><a id="user-content-javadoc" class="anchor" aria-hidden="true" href="#javadoc"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Javadoc</h3>
+        <hr>
+        <p>A complete Javadoc documentation for the project is available <a href="https://andreamouraud.github.io/" rel="nofollow">here</a></p>
         <h3><a id="user-content-admin" class="anchor" aria-hidden="true" href="#admin"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Admin</h3>
         <hr>
-        <p>The <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/admin" rel="nofollow">administration system</a> is used to manage the application:</p>
+        <p>The <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/admin" rel="nofollow">administration system</a> is used to manage the application:</p>
         <ul>
             <li>Reset the database</li>
             <li>Populate the database</li>
@@ -1036,7 +1045,7 @@
         <hr>
         <p>The application is separated in two parts</p>
         <h4><a id="user-content-anonymous-ordering" class="anchor" aria-hidden="true" href="#anonymous-ordering"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Anonymous ordering</h4>
-        <p>The <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/" rel="nofollow">anonymous ordering page</a> is where the user will be able to order his food.
+        <p>The <a href="http://ssd.eeng.dcu.ie:8091/application/mouraua2/" rel="nofollow">anonymous ordering page</a> is where the user will be able to order his food.
             The ordering path is quite simple :</p>
         <ul>
             <li>A list of available restaurants that the user can select is presented, if none exists, a message notifies him.</li>
@@ -1045,7 +1054,7 @@
             <li>An order confirmation page is presented.</li>
         </ul>
         <h4><a id="user-content-restaurant-managing" class="anchor" aria-hidden="true" href="#restaurant-managing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Restaurant managing</h4>
-        <p>Sample login details (generated from the <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/admin" rel="nofollow">administration page</a> populate):</p>
+        <p>Sample login details (generated from the <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/admin" rel="nofollow">administration page</a> populate):</p>
         <table>
             <thead>
             <tr>
@@ -1060,7 +1069,7 @@
             </tr>
             </tbody>
         </table>
-        <p>The <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/professional" rel="nofollow">restaurant managing page</a> is where any restaurateur can register and manage his restaurants for customers to order.
+        <p>The <a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/professional" rel="nofollow">restaurant managing page</a> is where any restaurateur can register and manage his restaurants for customers to order.
             This is what he can do:</p>
         <ul>
             <li>Create and modify restaurants.</li>
@@ -1118,12 +1127,12 @@
         <hr>
         <ul>
             <li>Design</li>
-            <li>Administration page : Automated database reset and populate</li>
+            <li><a href="http://ssd.eeng.dcu.ie:8091/mouraua2/application/admin" rel="nofollow">Administration page</a> : Automated database reset and populate</li>
             <li>SHA256 Password hashing with SecureRandom generated salt</li>
             <li>Field validation (Regex)</li>
             <li>MVC Architecture</li>
             <li>Session tracking and logout</li>
-            <li>Complete Javadoc documentation</li>
+            <li><a href="https://andreamouraud.github.io/" rel="nofollow">Complete Javadoc documentation</a></li>
             <li>MarkDown report (Turned to HTML scraping Github, <em>allowed by teacher</em>)</li>
             <li>Field modification</li>
         </ul>

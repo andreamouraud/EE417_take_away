@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/professional/menu")
+@WebServlet("/application/professional/menu")
 public class MenuServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -27,13 +27,13 @@ public class MenuServlet extends HttpServlet {
       return;
     Integer restaurant = (Integer) req.getSession().getAttribute("restaurant");
     if (restaurant == 0) {
-      res.sendRedirect(req.getContextPath() + "/professional");
+      res.sendRedirect(req.getContextPath() + "/application/professional");
       return;
     }
     Menu menu = createMenu(req.getParameter("nameField"), req.getParameter("descriptionField"), Double.parseDouble(req.getParameter("priceField")), restaurant);
 
     if (menu != null) {
-      res.sendRedirect(req.getContextPath() + "/professional/restaurant?id=" + restaurant);
+      res.sendRedirect(req.getContextPath() + "/application/professional/restaurant?id=" + restaurant);
     }
   }
 

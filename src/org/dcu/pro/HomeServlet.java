@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Professional home page Servlet
  */
-@WebServlet("/professional")
+@WebServlet("/application/professional")
 public class HomeServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -31,11 +31,11 @@ public class HomeServlet extends HttpServlet {
     User currentUser = (User) req.getSession(true).getAttribute("user");
 
     if (currentUser == null || currentUser.getId() == null) {
-      req.getRequestDispatcher("professional/login").forward(req, res);
+      req.getRequestDispatcher("/application/professional/login").forward(req, res);
       return;
     }
     List<Restaurant> restaurantList = Restaurants.getList(currentUser.getId());
     req.setAttribute("restaurantList", restaurantList);
-    req.getRequestDispatcher( "professional/home.jsp").forward(req, res);
+    req.getRequestDispatcher( "/professional/home.jsp").forward(req, res);
   }
 }

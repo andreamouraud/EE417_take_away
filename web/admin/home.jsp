@@ -15,7 +15,7 @@
 <body>
 <div class="page-container">
     <header class="header">
-        <h1 onclick="location.href='${contextPath}/professional';">Online Take-Away System<br>Admin</h1>
+        <h1>Online Take-Away System<br>Admin</h1>
     </header>
     <div class="title">Welcome Admin!</div>
 

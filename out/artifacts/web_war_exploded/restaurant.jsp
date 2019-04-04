@@ -15,12 +15,12 @@
 <body>
 <div class="page-container">
   <header class="header">
-    <h1 onclick="location.href='${contextPath}/';">Online Take-Away System</h1>
+    <h1 onclick="location.href='${contextPath}/application';">Online Take-Away System</h1>
   </header>
 <h2>Welcome to ${restaurant.name} ! Choose your meal </h2>
 <ul >
   <c:forEach items="${restaurant.menu}" var="menu">
-    <li onclick="location.href='${contextPath}/order?id=${menu.id}';">
+    <li onclick="location.href='${contextPath}/application/order?id=${menu.id}';">
       <strong>${menu.name}</strong>
       (€${menu.price})
       <hr>
@@ -35,7 +35,7 @@
   </c:if>
 </div>
   <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-    <a href="${contextPath}/professional" target="_blank">Professional access</a>
+    <a href="${contextPath}/application/professional" target="_blank">Professional access</a>
   </footer>
 </body>
 </html>

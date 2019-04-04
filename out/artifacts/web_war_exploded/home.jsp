@@ -15,13 +15,13 @@
 <body>
 <div class="page-container">
   <header class="header">
-    <h1 onclick="location.href='${contextPath}/';">Online Take-Away System</h1>
+    <h1 onclick="location.href='${contextPath}/application';">Online Take-Away System</h1>
   </header>
 
   <div id="list">
     <ul>
       <c:forEach items="${restaurantList}" var="restaurant">
-        <li onclick="location.href='${contextPath}/restaurant?id=${restaurant.id}';">
+        <li onclick="location.href='${contextPath}/application/restaurant?id=${restaurant.id}';">
             <strong>${restaurant.name}</strong>
             (${restaurant.location})<br>${restaurant.phoneNumber}
             <hr>
@@ -38,7 +38,7 @@
 </div>
 
 <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
-  <a href="${contextPath}/professional" target="_blank">Professional access</a>
+  <a href="${contextPath}/application/professional" target="_blank">Professional access</a>
 </footer>
 
 </body>

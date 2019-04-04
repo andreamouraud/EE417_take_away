@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * Professional Logout Servlet
  */
-@WebServlet("/professional/logout")
+@WebServlet("/application/professional/logout")
 public class LogoutServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
     req.setAttribute("contextPath", req.getContextPath());
     Session.clear(req, res);
-    res.sendRedirect(req.getContextPath() + "/professional");
+    res.sendRedirect(req.getContextPath() + "/application/professional");
   }
 
 }

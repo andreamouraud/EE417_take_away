@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 /**
  * Professional Restaurant Servlet
  */
-@WebServlet("/professional/restaurant")
+@WebServlet("/application/professional/restaurant")
 public class RestaurantServlet extends HttpServlet {
   private static final String REGEX_PHONENUMBER = "\\d{10}|(?:\\d{3}-){2}\\d{4}|\\(\\d{3}\\)\\d{3}-?\\d{4}";
   private static final long serialVersionUID = 1L;
@@ -33,16 +33,18 @@ public class RestaurantServlet extends HttpServlet {
    * @param res HttpServletResponse
    * @throws IOException any issue while redirecting
    */
-  public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
+  public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
     req.setAttribute("contextPath", req.getContextPath());
     HttpSession session = req.getSession(true);
 
     User currentUser = (User) req.getSession(true).getAttribute("user");
     Restaurant restaurant = createRestaurant(req.getParameter("nameField"), req.getParameter("locationField"), currentUser.getId(), req.getParameter("descriptionField"), req.getParameter("phoneNumberField"));
 
-    if (restaurant != null) {
-      res.sendRedirect(req.getContextPath() + "/professional");
-    }
+    if (restaurant == null)
+      req.getRequestDispatcher( "/professional/createRestaurant.jsp").forward(req, res);
+    else
+      res.sendRedirect(req.getContextPath() + "/application/professional");
+
   }
 
   /**
@@ -57,7 +59,7 @@ public class RestaurantServlet extends HttpServlet {
     HttpSession session = req.getSession();
     User currentUser = (User)session.getAttribute("user");
     if (currentUser == null) {
-      res.sendRedirect(req.getContextPath() + "/professional");
+      res.sendRedirect(req.getContextPath() + "/application/professional");
       return;
     }
     Restaurant restaurant = Restaurants.get(Integer.parseInt(req.getParameter("id")));

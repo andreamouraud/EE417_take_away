@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Professional Login Servlet
  */
-@WebServlet("/professional/login")
+@WebServlet("/application/professional/login")
 public class LoginServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
       HttpSession session = req.getSession();
       session.setAttribute("user", user);
     }
-    res.sendRedirect(req.getContextPath() + "/professional");
+    res.sendRedirect(req.getContextPath() + "/application/professional");
   }
 
   /**

@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Order confirmation Servlet
  */
-@WebServlet("/confirmation")
+@WebServlet("/application/confirmation")
 public class ConfirmationServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
 

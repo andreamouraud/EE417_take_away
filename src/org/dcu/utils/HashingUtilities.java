@@ -9,6 +9,8 @@ import java.security.SecureRandom;
  * Hashing utilities for password save
  */
 public class HashingUtilities {
+  private static MessageDigest md = null;
+
   /**
    * Used to generate the salt to hash the user password
    * @return the generated Salt
@@ -31,8 +33,9 @@ public class HashingUtilities {
    * @throws NoSuchAlgorithmException
    */
   public static String generateHashedPassword(String password, String salt) throws NoSuchAlgorithmException {
-    MessageDigest md = MessageDigest.getInstance("SHA-256");
-    md.update(salt.getBytes());
+    if (md == null)
+      md = MessageDigest.getInstance("SHA-256");
+    md.update(salt.getBytes(StandardCharsets.UTF_8));
     byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
     StringBuilder sb = new StringBuilder();
     for (byte b : hashedPassword)
