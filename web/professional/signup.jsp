@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Order</title>
+    <title>Professional</title>
     <link rel="stylesheet" href="${contextPath}/style/style.css">
 </head>
 <body>

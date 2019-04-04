@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Report Andrea Mouraud</title>
+    <title>Report</title>
     <style>
         @font-face {
             font-family: octicons-link;
