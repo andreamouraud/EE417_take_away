@@ -17,16 +17,29 @@
     <header class="header">
         <h1 onclick="location.href='${contextPath}/application/professional';">Online Take-Away System<br>Professional</h1>
     </header>
-    <div class="title">${menu.name}</div>
 
-    <div class="box">
-        <h1>Description</h1>
-        <hr>
-        ${menu.description}
-        <h1 style="margin-top: 20px;">Price</h1>
-        <hr>
-        €${menu.price}
-    </div>
+    <form method="POST" action="${contextPath}/application/professional/menu" name="form">
+        <input type="hidden" name="idField" value="${menu.id}">
+        <div class="title">
+            Update your menu
+        </div>
+        <div class="box">
+            <h1>Name</h1>
+            <hr>
+            <input type="text" name="nameField" value="${menu.name}"/>
+            <h1>Description</h1>
+            <hr>
+            <input type="text" name="descriptionField" value="${menu.description}"/>
+            <h1 style="margin-top: 20px;">Price</h1>
+            <hr>
+            <input type="number" step=0.01 name="priceField" value="${menu.price}"/>
+            <input type="submit" value="Apply changes" />
+            <a style="color: dodgerblue;" href="${contextPath}/application/professional/restaurant?id=${menu.restaurant}"> CANCEL</a>
+        </div>
+    </form>
+
+
+
 </div>
 <footer class="footer">Online Take-Away System | Andrea Mouraud<br>
     <a href="${contextPath}/application/professional/logout">Logout</a>
