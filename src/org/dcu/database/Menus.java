@@ -108,4 +108,18 @@ public class Menus {
       e.printStackTrace();
     }
   }
+
+  /**
+   * Patch the menu in database
+   * @param menu
+   */
+  public static void patch(Menu menu) {
+    try {
+      Statement stmt = DatabaseConnection.connect();
+      stmt.executeUpdate("UPDATE mouraua2_menus SET name='" + menu.getName() + "', description='" + menu.getDescription() + "', price="+ menu.getPrice() + "WHERE id=" + menu.getId());
+      DatabaseConnection.close();
+    } catch (ClassNotFoundException | SQLException e) {
+      e.printStackTrace();
+    }
+  }
 }

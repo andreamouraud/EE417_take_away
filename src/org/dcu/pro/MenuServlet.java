@@ -30,8 +30,11 @@ public class MenuServlet extends HttpServlet {
       res.sendRedirect(req.getContextPath() + "/application/professional");
       return;
     }
-    Menu menu = createMenu(req.getParameter("nameField"), req.getParameter("descriptionField"), Double.parseDouble(req.getParameter("priceField")), restaurant);
-
+    Menu menu;
+    if (req.getParameter("idField") == null)
+      menu = createMenu(req.getParameter("nameField"), req.getParameter("descriptionField"), Double.parseDouble(req.getParameter("priceField")), restaurant);
+    else
+      menu = modifyMenu(Integer.parseInt(req.getParameter("idField")), req.getParameter("nameField"), req.getParameter("descriptionField"), Double.parseDouble(req.getParameter("priceField")));
     if (menu != null) {
       res.sendRedirect(req.getContextPath() + "/application/professional/restaurant?id=" + restaurant);
     }
@@ -68,6 +71,25 @@ public class MenuServlet extends HttpServlet {
       return menu;
     }
     return null;
+  }
+
+  /**
+   * Modify the menu in database
+   * @param id
+   * @param name
+   * @param description
+   * @param price
+   * @return the modified menu
+   */
+  private Menu modifyMenu(Integer id, String name, String description, double price) {
+    Menu menu = Menus.get(id);
+    if (validateIdentity(name)) {
+      menu.setName(name);
+      menu.setDescription(description);
+      menu.setPrice(price);
+      Menus.patch(menu);
+    }
+    return menu;
   }
 
   /**
