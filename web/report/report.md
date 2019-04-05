@@ -47,7 +47,7 @@ The [administration system](http://ssd.eeng.dcu.ie:8091/mouraua2/application/adm
 - Reset the database
 - Populate the database
 
-In the accessed with a single account, that cannot be removed nor changed:
+It is accessed with a single account, that cannot be removed nor changed:
 
 | Email        | Password  |
 |--------------|-----------|
@@ -84,7 +84,7 @@ This is what he can do:
 ***
 If you wish to manually build the database tables instead of using the administration system, here are queries :
 
-*The queries must be perform in this exact order because of constraint rules*
+*The queries must be performed in this exact order because of constraint rules*
 
 #### Users
 

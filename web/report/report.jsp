@@ -1027,7 +1027,7 @@
             <li>Reset the database</li>
             <li>Populate the database</li>
         </ul>
-        <p>In the accessed with a single account, that cannot be removed nor changed:</p>
+        <p>It is accessed with a single account, that cannot be removed nor changed:</p>
         <table>
             <thead>
             <tr>
@@ -1080,7 +1080,7 @@
         <h3><a id="user-content-database" class="anchor" aria-hidden="true" href="#database"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Database</h3>
         <hr>
         <p>If you wish to manually build the database tables instead of using the administration system, here are queries :</p>
-        <p><em>The queries must be perform in this exact order because of constraint rules</em></p>
+        <p><em>The queries must be performed in this exact order because of constraint rules</em></p>
         <h4><a id="user-content-users" class="anchor" aria-hidden="true" href="#users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Users</h4>
         <div class="highlight highlight-source-sql"><pre><span class="pl-k">CREATE</span> <span class="pl-k">TABLE</span> <span class="pl-en">mouraua2_users</span> (
                 id <span class="pl-k">INTEGER</span> GENERATED ALWAYS <span class="pl-k">as</span> IDENTITY(START with <span class="pl-c1">1</span> INCREMENT by <span class="pl-c1">1</span>),
