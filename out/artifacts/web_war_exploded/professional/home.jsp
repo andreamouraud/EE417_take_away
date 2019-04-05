@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Order</title>
+    <title>Professional</title>
     <link rel="stylesheet" href="${contextPath}/style/style.css">
 </head>
 <body>
