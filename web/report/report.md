@@ -21,6 +21,7 @@ The project was developed using :
 * IntelliJ IDEA 2018.3.4 (Ultimate Edition)
 * No Javascript library 
 * HTML5 and CSS3
+* Git and Github (versioning)
 * Github and MarkDown (report) 
 
 ### Structure
